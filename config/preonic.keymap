@@ -55,13 +55,6 @@
             #binding-cells = <0>;
             bindings = <&kp RA(LBKT) &kp LS(U)>;
         };
-
-        // Macro pour obtenir le circonflexe ^ seul ([ puis Espace)
-        macro_circ: macro_circ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT>;
-        };
     };
 
 
@@ -106,7 +99,7 @@
             bindings = <
 &kp FSLH   &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
 &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &kp DEL
-&none      &none      &none      &none      &none      &none      &none      &kp MINUS  &kp EQUAL  &macro_circ &kp CA_CCED &kp CA_AGRV
+&none      &none      &none      &none      &none      &none      &none      &kp MINUS  &kp EQUAL  &kp LBKT   &kp CA_CCED &kp CA_AGRV
 &none      &none      &none      &none      &none      &none      &none      &kp CA_AGRV &macro_ugrv &kp LC(HOME) &kp LC(END) &kp C_PP
 &none      &none      &none      &none      &trans     &none      &none      &trans     &kp C_PREV &kp C_NEXT &kp C_VOL_DN &kp C_VOL_UP
             >;
