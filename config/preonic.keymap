@@ -15,7 +15,7 @@
 #define CA_EGRV QUOT         // è (Touche ''' sur QWERTY US)
 #define CA_CCED RBRC         // ç (Touche ']' sur QWERTY US)
 #define CA_AGRV BSLH         // à (Touche '\\' sur QWERTY US)
-#define CA_UGRV RA(LBRC)     // ù (Right Alt + '[')
+#define CA_UGRV RA(U)        // ù (Right Alt + '[')
 #define CA_CIRC LBRC         // ^ (Touche morte '^' avec '[')
 
 // Majuscules et caractères spéciaux
@@ -23,7 +23,7 @@
 #define CA_CAP_EGRV LS(QUOT)      // È
 #define CA_CAP_CCED LS(RBRC)      // Ç
 #define CA_CAP_AGRV LS(BSLH)      // À
-#define CA_CAP_UGRV LS(RA(LBRC))  // Ù
+#define CA_CAP_UGRV LS(RA(U))     // Ù
 #define CA_UML      LS(LBRC)      // ¨ (Touche morte '¨' avec Shift + '[')
 
 #define BASE 0
@@ -73,7 +73,7 @@
 &kp BSLH   &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT  &kp QMARK  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &kp PSCRN
 &none      &none      &none      &none      &none      &none      &none      &kp UNDER  &kp PLUS   &kp CA_UML &kp CA_CAP_CCED &kp CA_CAP_AGRV
 &none      &none      &none      &none      &none      &none      &none      &kp CA_CAP_AGRV &kp CA_CAP_UGRV &kp HOME &kp END &none
-&none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none
+&none      &none      &none      &none      &trans     &none      &none      &trans     &none      &none      &none      &none
             >;
         };
 
@@ -84,7 +84,7 @@
 &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &kp DEL
 &none      &none      &none      &none      &none      &none      &none      &kp MINUS  &kp EQUAL  &kp CA_CIRC &kp CA_CCED &kp CA_AGRV
 &none      &none      &none      &none      &none      &none      &none      &kp CA_AGRV &kp CA_UGRV &kp LC(HOME) &kp LC(END) &kp C_PP
-&none      &none      &none      &none      &none      &none      &none      &none      &kp C_PREV &kp C_NEXT &kp C_VOL_UP &kp C_VOL_DN
+&none      &none      &none      &none      &trans     &none      &none      &trans     &kp C_PREV &kp C_NEXT &kp C_VOL_UP &kp C_VOL_DN
             >;
         };
 
